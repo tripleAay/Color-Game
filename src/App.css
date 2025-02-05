@@ -147,7 +147,28 @@ h1 {
 
 @media (max-width: 414px) {
   [data-testid="game-container"] {
-    width: 95%;
+    width: 98%;
+    padding: 20px;
+  }
+
+  [data-testid="colorBox"] {
+    width: 90px;
+    height: 90px;
+  }
+
+  [data-testid="colorOption"] {
+    width: 60px;
+    height: 60px;
+  }
+
+  [data-testid="newGameButton"] {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+}
+@media (max-width: 412px) {
+  [data-testid="game-container"] {
+    width: 98%;
     padding: 20px;
   }
 
