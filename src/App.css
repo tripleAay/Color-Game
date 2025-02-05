@@ -134,7 +134,51 @@ h1 {
     height: 90px;
   }
 
-  [data-testid="color-btn"] {
+  [data-testid="colorOption"] {
+    width: 60px;
+    height: 60px;
+  }
+
+  [data-testid="newGameButton"] {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 414px) {
+  [data-testid="game-container"] {
+    width: 95%;
+    padding: 20px;
+  }
+
+  [data-testid="colorBox"] {
+    width: 90px;
+    height: 90px;
+  }
+
+  [data-testid="colorOption"] {
+    width: 60px;
+    height: 60px;
+  }
+
+  [data-testid="newGameButton"] {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  [data-testid="game-container"] {
+    width: 95%;
+    padding: 20px;
+  }
+
+  [data-testid="colorBox"] {
+    width: 90px;
+    height: 90px;
+  }
+
+  [data-testid="colorOption"] {
     width: 60px;
     height: 60px;
   }
@@ -152,4 +196,6 @@ h1, p {
   margin: 0; 
   padding: 5px;
 }
+
+
 
