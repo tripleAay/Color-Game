@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: #083D77;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+[data-testid="game-container"] {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  width: 85%;
+  max-width: 450px;
+  min-height: 500px; 
+  border: 3px solid #007bff;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+h1 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+
+  margin: 0; /* Removes unnecessary margin to fit content properly */
+  padding: 5px;
+}
+
+[data-testid="gameInstructions"] {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+[data-testid="colorBox"] {
+  width: 100px;
+  height: 100px;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #222;
+  transition: transform 0.2s;
+}
+
+[data-testid="colorBox"]:hover {
+  transform: scale(1.05);
+}
+
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  max-width: 100%;
+}
+
+
+[data-testid="color-btn"] {
+  width: 70px;
+  height: 70px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+[data-testid="color-btn"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+
+[data-testid="gameStatus"] {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #007bff;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Apply this class dynamically to fade out */
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+[data-testid="score"] {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+}
+
+[data-testid="newGameButton"] {
+  margin-top: auto; 
+  padding: 10px 22px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+[data-testid="newGameButton"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  [data-testid="game-container"] {
+    width: 95%;
+    padding: 20px;
+  }
+
+  [data-testid="colorBox"] {
+    width: 90px;
+    height: 90px;
+  }
+
+  [data-testid="color-btn"] {
+    width: 60px;
+    height: 60px;
+  }
+
+  [data-testid="newGameButton"] {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+}
+
+
+
+
+h1, p {
+  margin: 0; 
+  padding: 5px;
+}
+
