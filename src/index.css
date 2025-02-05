@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+.container {
+  width: 90%; /* Default width for all devices */
+  max-width: 1200px; /* Ensures it doesn’t get too wide on large screens */
+  margin: 0 auto; /* Centers content */
+}
+
+/* Adjustments for smaller screens (tablets and mobile) */
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Use full width on small screens */
+    padding: 0 16px; /* Adds some space on edges */
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    width: 100%; /* Use full width on small screens */
+    padding: 0 16px; /* Adds some space on edges */
+  }
+}
